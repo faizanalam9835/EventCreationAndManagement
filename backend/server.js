@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://your-frontend-domain.com",
+    origin: "https://faizanalam123.netlify.app/",
     credentials: true
   }));
 app.use(express.json());
