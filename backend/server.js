@@ -12,7 +12,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://faizanalam123.netlify.app/",
+    origin: [
+        "http://localhost:5173",        // local dev (Vite default)
+        "https://faizanalam123.netlify.app"  // deployed frontend
+      ],
     credentials: true
   }));
 app.use(express.json());
